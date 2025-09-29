@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Room Details</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #fefaf5;
+    }
+
+    .container {
+      display: flex;
+      gap: 40px;
+      padding: 60px;
+    }
+
+    .left {
+      flex: 3;
+    }
+
+    .right {
+      flex: 1;
+      background-color: #fdfdfd;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.05);
+    }
+
+    .main-image {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .thumbs {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .thumbs img {
+      height: 60px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      margin-top: 30px;
+      font-size: 28px;
+    }
+
+    .desc {
+      color: #444;
+      font-size: 15px;
+      margin: 20px 0;
+      line-height: 1.7;
+    }
+
+    .info-box {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      font-size: 15px;
+      margin: 30px 0;
+    }
+
+    .info-box div {
+      text-align: center;
+    }
+
+    .info-box strong {
+      display: block;
+      font-size: 16px;
+      color: #222;
+      margin-top: 6px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-weight: 500;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .btn-book {
+      width: 100%;
+      padding: 12px;
+      background-color: #d2a679;
+      border: none;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn-book:hover {
+      background-color: #b68660;
+    }
+
+    .compare {
+      margin-top: 40px;
+    }
+
+    .compare h4 {
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
+
+    .compare-room {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .compare-room img {
+      height: 60px;
+      width: 60px;
+      object-fit: cover;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+
+    .compare-room span {
+      font-size: 15px;
+      font-weight: 500;
+    }
+
+    .compare-room small {
+      display: block;
+      font-size: 13px;
+      color: #666;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- LEFT SIDE -->
+    <div class="left">
+      <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/678122873.jpg?k=35cb3b95b086426cac0146088eb7faf3f030ddaa9003b7789ba399e44c6e7ad5&o=&hp=1" class="main-image" id="mainPreview">
+
+      <div class="thumbs">
+        <img src="https://html.kodesolution.com/2025/hoteler-html/images/resource/room1.jpg" onclick="switchImg(this)">
+        <img src="https://html.kodesolution.com/2025/hoteler-html/images/resource/room2.jpg" onclick="switchImg(this)">
+        <img src="https://html.kodesolution.com/2025/hoteler-html/images/resource/room3.jpg" onclick="switchImg(this)">
+        <img src="https://html.kodesolution.com/2025/hoteler-html/images/resource/room4.jpg" onclick="switchImg(this)">
+      </div>
+
+      <h2>Description of Room</h2>
+      <p class="desc">Mauris non dignissim purus, ac commodo diam. Donec sit amet lacinia nulla. Aliquam quis purus in justo pulvinar tempor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, repellat.</p>
+
+      <div class="info-box">
+        <div>Room Size <strong>600Sq</strong></div>
+        <div>Rooms Bed <strong>2 Single Bed</strong></div>
+        <div>Occupancy <strong>Three Persons</strong></div>
+        <div>View <strong>Sea View</strong></div>
+      </div>
+
+      <p class="desc">Mauris non dignissim purus, ac commodo diam. Donec sit amet lacinia nulla. Aliquam quis purus in justo pulvinar tempor. Aliquam tellus nulla, sollicitudin at euismod nec.</p>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="right">
+      <div class="form-group">
+        <label>Check-In</label>
+        <input type="date">
+      </div>
+      <div class="form-group">
+        <label>Check-Out</label>
+        <input type="date">
+      </div>
+      <div class="form-group">
+        <label>Guests</label>
+        <select>
+          <option>1 Guest</option>
+          <option>2 Guests</option>
+          <option>3 Guests</option>
+          <option>4+ Guests</option>
+        </select>
+      </div>
+
+      <button class="btn-book">BOOK NOW</button>
+
+      <div class="compare">
+        <h4>Compare Room</h4>
+        <div class="compare-room">
+          <img src="https://html.kodesolution.com/2025/hoteler-html/images/resource/room1.jpg">
+          <div>
+            <span>Economy Room</span>
+            <small>$175 / Night</small>
+          </div>
+        </div>
+        <div class="compare-room">
+          <img src="https://html.kodesolution.com/2025/hoteler-html/images/resource/room2.jpg">
+          <div>
+            <span>Deluxe Room</span>
+            <small>$250</small>
+          </div>
+        </div>
+        <div class="compare-room">
+          <img src="https://html.kodesolution.com/2025/hoteler-html/images/resource/room4.jpg">
+          <div>
+            <span>Super Deluxe Room</span>
+            <small>$320</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    function switchImg(img) {
+      document.getElementById("mainPreview").src = img.src;
+    }
+  </script>
+
+</body>
+</html>

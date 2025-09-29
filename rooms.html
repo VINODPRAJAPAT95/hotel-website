@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Moonlit Hotel</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="Rstyles.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="navbar-top">
+    <div class="logo">🌙 Melora</div>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav id="navMenu" class="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="rooms.html">Rooms</a>
+      <div class="dropdown">
+        <a href="#">Pages ▾</a>
+        <div class="dropdown-content">
+          <a href="about.html">About</a>
+          <a href="restaurant.html">Restaurant</a>
+          <a href="Gallery.html">Gallery</a>
+          <a href="service.html">Service</a>
+        </div>
+      </div>
+      <a href="Blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      <div class="nav-buttons">
+        <button class="btn-outline">Sign In</button>
+        <button class="btn-primary">Book Now</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== VIDEO SECTION ===== -->
+  <section class="video-section">
+    <video id="myVideo" class="header-video" muted autoplay loop playsinline>
+      <source src="https://videos.pexels.com/video-files/7578550/7578550-uhd_2560_1440_30fps.mp4" type="video/mp4">
+    </video>
+    <div id="playPauseBtn" class="play-button" onclick="togglePlayPause()">⏸</div>
+  </section>
+
+  <!-- ===== ROOMS ===== -->
+  <section class="room-section">
+    <h2 class="section-title">Our Rooms</h2>
+    <button class="scroll-btn left" id="scrollLeft">&#10094;</button>
+    <div class="room-scroll" id="roomScroll">
+      <div class="room-card">
+        <img src="https://www.redrockresort.com/wp-content/uploads/2020/04/RR-King-Bedroom.jpg" alt="">
+        <div class="room-info">
+          <h3>King Room</h3>
+          <p>Spacious king-sized comfort.</p>
+          <div class="details">
+            <span>20 Ft²</span><span>4 Beds</span>
+          </div>
+          <div class="bottom">
+            <button>Book Now</button>
+            <span class="price">$200 / Night</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="room-card">
+        <img src="https://assets.sandsresortsmacao.cn/content/sandsmacao/hotel/2020/double-king-premium-room/sm_double-king-premium-room_banner_750x510-1.jpg" alt="">
+        <div class="room-info">
+          <h3>Premium Double</h3>
+          <p>Luxury comfort for two.</p>
+          <div class="details">
+            <span>20 Ft²</span><span>2 Beds</span>
+          </div>
+          <div class="bottom">
+            <button>Book Now</button>
+            <span class="price">$100 / Night</span>
+          </div>
+        </div>
+      </div>
+      <div class="room-card">
+        <img src="https://assets.sandsresortsmacao.cn/content/sandsmacao/hotel/2020/double-king-premium-room/sm_double-king-premium-room_banner_750x510-1.jpg" alt="">
+        <div class="room-info">
+          <h3>Premium Double</h3>
+          <p>Luxury comfort for two.</p>
+          <div class="details">
+            <span>20 Ft²</span><span>2 Beds</span>
+          </div>
+          <div class="bottom">
+            <button>Book Now</button>
+            <span class="price">$100 / Night</span>
+          </div>
+        </div>
+      </div>
+      <div class="room-card">
+        <img src="https://assets.sandsresortsmacao.cn/content/sandsmacao/hotel/2020/double-king-premium-room/sm_double-king-premium-room_banner_750x510-1.jpg" alt="">
+        <div class="room-info">
+          <h3>Premium Double</h3>
+          <p>Luxury comfort for two.</p>
+          <div class="details">
+            <span>20 Ft²</span><span>2 Beds</span>
+          </div>
+          <div class="bottom">
+            <button>Book Now</button>
+            <span class="price">$100 / Night</span>
+          </div>
+        </div>
+      </div>
+      <div class="room-card">
+        <img src="https://assets.sandsresortsmacao.cn/content/sandsmacao/hotel/2020/double-king-premium-room/sm_double-king-premium-room_banner_750x510-1.jpg" alt="">
+        <div class="room-info">
+          <h3>Premium Double</h3>
+          <p>Luxury comfort for two.</p>
+          <div class="details">
+            <span>20 Ft²</span><span>2 Beds</span>
+          </div>
+          <div class="bottom">
+            <button>Book Now</button>
+            <span class="price">$100 / Night</span>
+          </div>
+        </div>
+      </div>
+      <div class="room-card">
+        <img src="https://assets.sandsresortsmacao.cn/content/sandsmacao/hotel/2020/double-king-premium-room/sm_double-king-premium-room_banner_750x510-1.jpg" alt="">
+        <div class="room-info">
+          <h3>Premium Double</h3>
+          <p>Luxury comfort for two.</p>
+          <div class="details">
+            <span>20 Ft²</span><span>2 Beds</span>
+          </div>
+          <div class="bottom">
+            <button>Book Now</button>
+            <span class="price">$100 / Night</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add more room cards exactly the same structure -->
+    </div>
+    <button class="scroll-btn right" id="scrollRight">&#10095;</button>
+  </section>
+
+  <!-- ===== COMFORTS ===== -->
+  <section class="comforts-section">
+    <div class="text">
+      <h2>In-Room Comforts</h2>
+      <p>Exceptional amenities making you feel valued and relaxed.</p>
+      <ul>
+        <li>Exceptional Amenities</li>
+        <li>Services That Exceed Expectations</li>
+        <li>Spectacular Views</li>
+      </ul>
+      <div class="stats">
+        <div><span>10+</span> Amenities</div>
+        <div><span>10+</span> Services</div>
+      </div>
+    </div>
+    <div class="image">
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="">
+    </div>
+  </section>
+
+  <!-- ===== AMENITIES ===== -->
+  <section class="amenities-section">
+    <div class="amenities-header">
+      <h2>Our Primary Room <em>Amenities</em> & Services</h2>
+      <p>At Melora Hotel, we ensure your stay is comfortable and memorable. Enjoy well-appointed rooms with modern amenities, 24/7 room service, high-speed Wi-Fi, and personalized concierge services designed to meet all your needs.</p>
+    </div>
+    <div class="amenities-grid">
+      <div class="amenity-box">🛏️ <h4>Premium Beds</h4></div>
+      <div class="amenity-box">🛁 <h4>Bathtub</h4></div>
+      <div class="amenity-box">📺 <h4>Smart TV</h4></div>
+      <div class="amenity-box">🏊‍♂️ <h4>Private Pool</h4></div>
+      <div class="amenity-box">🍽️ <h4>Kitchen</h4></div>
+      <div class="amenity-box">💖 <h4>Romantic</h4></div>
+    </div>
+  </section>
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <!-- Column 1 -->
+      <div class="footer-box">
+        <h3><i class="fa fa-anchor"></i> HOTEL <span>BOOKING</span></h3>
+        <p> Melora Hotel,</p>
+        <p><i class="fa fa-map-marker"></i>Marine Lines, Mumbai,<br>Maharashtra, India - 400020</p>
+      </div>
+      <!-- Column 2 -->
+      <div class="footer-box">
+        <h4>QUICK LINKS</h4>
+        <ul>
+          <li><a href="#">Rooms</a></li>
+          <li><a href="#">Food & Drinks</a></li>
+          <li><a href="#">Beach Venues</a></li>
+          <li><a href="#">Amenities</a></li>
+        </ul>
+      </div>
+      <!-- Column 3 -->
+      <div class="footer-box">
+        <h4>WE ARE GLOBAL</h4>
+        <img src="https://i.ibb.co/rdqLFzJ/world-map-footer.png" alt="world map"
+          style="max-width: 100%; margin-top: 10px;">
+      </div>
+    </div>
+    <!-- Bottom -->
+    <div class="footer-bottom">
+      <p>© 2015 Hotelbooking. All rights reserved</p>
+      <div class="social-icons">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-google-plus"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="Rscript.js"></script>
+</body>
+</html>

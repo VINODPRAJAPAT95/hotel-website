@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Asian-Inspired Cuisine</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="Restostyle.css">
+</head>
+<body>
+<header class="navbar-top">
+  <div class="logo">🌙 Melora</div>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <nav id="navMenu" class="nav-menu">
+    <a href="index.html">Home</a>
+    <a href="rooms.html">Rooms</a>
+    <div class="dropdown">
+      <a href="#">Pages ▾</a>
+      <div class="dropdown-content">
+        <a href="about.html">About</a>
+        <a href="restaurant.html">Restaurant</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="service.html">Service</a>
+      </div>
+    </div>
+    <a href="Blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+
+    <!-- ✅ Buttons must be inside nav-menu -->
+    <div class="nav-buttons">
+      <button class="btn-outline">Sign In</button>
+      <button class="btn-primary">Book Now</button>
+    </div>
+  </nav>
+</header>
+<!-----section start main menu------>
+  <section class="hero">
+    <div class="overlay">
+  <div class="content-wrapper">
+    <div class="label">RESTAURANT</div>
+    <h1>Spices & Traditions of India</h1>
+  </div>
+
+<div class="booking-bar">
+  <div class="booking-item">
+    <label class="sub-label" for="arrive">ARRIVE</label>
+    <input type="date" id="arrive" class="date-input">
+  </div>
+  <div class="booking-item">
+    <label class="sub-label" for="depart">DEPART</label>
+    <input type="date" id="depart" class="date-input">
+  </div>
+  <div class="booking-item icon">
+    <button class="search-btn">✈️</button>
+  </div>
+</div>
+</div>
+  </section>
+  <section class="about-section">
+  <div class="about-content">
+    <h5 class="sub-heading">Special selection</h5>
+    <h2 class="main-heading">About Our Restaurant</h2>
+    <p class="first-letter">
+At Melora Hotel, dining is more than a meal — it’s an experience. Our restaurant blends authentic Mumbai flavors with global cuisine, curated by expert chefs who take pride in every dish. Fresh ingredients, innovative recipes, and impeccable presentation create a culinary journey you’ll never forget...
+    </p>
+    <p>
+    Whether you’re enjoying a hearty breakfast, a fine dinner with friends, or a romantic evening under the stars, our restaurant promises taste, elegance, and unforgettable moments...
+    </p>
+    <a href="#" class="menu-button">Explore Our Menu</a>
+  </div>
+
+  <div class="carousel-container">
+    <div class="carousel-slider">
+      <img src="https://media.istockphoto.com/id/1829241109/photo/enjoying-a-brunch-together.jpg?s=612x612&w=0&k=20&c=9awLLRMBLeiYsrXrkgzkoscVU_3RoVwl_HA-OT-srjQ=" alt="Slide 1">
+      <img src="https://media.istockphoto.com/id/2158018408/photo/friends-enjoy-luxury-meal-at-restaurant.jpg?s=612x612&w=0&k=20&c=lhYhPPew8H1gqq2nThN52Eyj4PVPCU3JXEn2FYtUTno=" alt="Slide 2">
+      <img src="https://res.cloudinary.com/sagacity/image/upload/c_crop,h_3270,w_4905,x_0,y_0/c_limit,dpr_auto,f_auto,fl_lossy,q_80,w_1080/global-eats-eat-the-world-houston-india-india_s-restaurant_BCK03248-Edit_CREDIT_Brian_Kennedy_l5uurc.jpg" alt="Slide 3">
+    </div>
+
+    <div class="carousel-arrows">
+      <button class="arrow left" onclick="prevSlide()">&#10094;</button>
+      <button class="arrow right" onclick="nextSlide()">&#10095;</button>
+    </div>
+
+    <div class="carousel-dots" id="dots"></div>
+  </div>
+</section>
+<section class="menu-section">
+  <div class="menu-header">
+    <p class="menu-subtitle">Special selection</p>
+    <h2>Discover Our Menu</h2>
+  </div>
+
+  <div class="menu-items-box">
+    <div class="menu-item">
+      <img src="https://www.licious.in/blog/wp-content/uploads/2020/10/butter-chicken--600x600.jpg" alt="Soft Shell Crab">
+      <div class="menu-text">
+        <h4>Butter Chicken</h4>
+        <p>Tender chicken cooked in a rich tomato and cream gravy, served with basmati rice.</p>
+      </div>
+      <div class="menu-price">$29</div>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://experience-fresh.panasonic.eu/wp-content/uploads/2018/12/Paneer_Tikka_Masala_enjoy_181205-1300x867.jpg" alt="Miso Chicken">
+      <div class="menu-text">
+        <h4>Paneer Tikka Masala <span class="discount">-15%</span></h4>
+        <p>Grilled paneer cubes simmered in a spicy tomato-based sauce.</p>
+      </div>
+      <div class="menu-price">$12</div>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://www.allrecipes.com/thmb/Fd6xzEJZWblLiR83vw_5Z20beaY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/ALR-7485811-lamb-rogan-josh-recipe-VAT-4x3-76fc73d4bdc0442d9876fdcd30c0d43c.jpg" alt="Salmon Riverland">
+      <div class="menu-text">
+        <h4>Lamb Rogan Josh</h4>
+        <p>Slow-cooked lamb in aromatic spices, served with naan.</p>
+      </div>
+      <div class="menu-price">$14</div>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://c.ndtvimg.com/2022-04/fq5cs53_biryani-doubletree-by-hilton_625x300_12_April_22.jpg" alt="Victoria's Filet Mignon">
+      <div class="menu-text">
+        <h4>Veg Biryani</h4>
+        <p>Fragrant basmati rice cooked with vegetables, saffron, and Indian spices.</p>
+      </div>
+      <div class="menu-price">$35</div>
+    </div>
+  </div>
+
+  <div class="menu-download">
+    <button class="btn-download">Download PDF Menu</button>
+  </div>
+</section>
+ <!-- Main Footer -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <!-- Column 1 -->
+      <div class="footer-box">
+           <h3><i class="fa fa-anchor"></i> HOTEL <span>BOOKING</span></h3>
+        <p>   Melora Hotel.</p>
+        <p><i class="fa fa-map-marker"></i> Marine Lines, Mumbai,<br> Maharashtra, India - 400020</p>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="footer-box">
+        <h4>QUICK LINKS</h4>
+        <ul>
+          <li><a href="#">Rooms</a></li>
+          <li><a href="#">Food & Drinks</a></li>
+          <li><a href="#">Beach Venues</a></li>
+          <li><a href="#">Amenities</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3 -->
+      <div class="footer-box">
+        <h4>WE ARE GLOBAL</h4>
+        <img src="https://i.ibb.co/rdqLFzJ/world-map-footer.png" alt="world map"
+          style="max-width: 100%; margin-top: 10px;">
+      </div>
+    </div>
+
+    <!-- Bottom -->
+    <div class="footer-bottom">
+      <p>© 2015 Hotelbooking. All rights reserved</p>
+      <div class="social-icons">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-google-plus"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+
+<script src="slider.js"></script>
+
+</body>
+</html>
